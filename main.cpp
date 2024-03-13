@@ -1,6 +1,6 @@
 #include <iostream>
 
-void enterAnswer(int answer[]);
+void generateAnswer(int answer[]);
 void enterGuess(int guess[]);
 int strikeAndBall(int answer[], int guess[]);
 
@@ -12,7 +12,7 @@ int main(void) {
     int guess[3] = {0, };
     int strikeNum = 0;
 
-    enterAnswer(answer);
+    generateAnswer(answer);
 
     while(strikeNum != 3) {
         enterGuess(guess);
